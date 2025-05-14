@@ -389,7 +389,7 @@ async function generateDevelopmentBuild() {
 
   const server = app.listen(
     argv.port,
-    argv.public ? undefined : "localhost",
+    argv.public ? '0.0.0.0' : "localhost",
     function () {
       if (argv.public) {
         console.log(
